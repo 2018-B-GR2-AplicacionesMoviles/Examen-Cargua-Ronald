@@ -6,11 +6,25 @@ class BaseDeDatos{
         fun agregarPersonas (personas:Persona){
             Persona.add(personas)
         }
+
+        fun actualizarPersonas(personas: Persona){
+            Persona.forEach{
+                if (it.nombre.equals(personas.nombre)){
+                    it.apellido = personas.apellido
+                    it.cedula = personas.cedula
+                    it.telefono = personas.telefono
+                    it.direccion = personas.direccion
+            }
+        }
+        }
+        fun eliminarPersonas(nombre: String ){
+            for (i in Persona.indices){
+                if (Persona[i].nombre.equals(nombre)){
+                    Persona.removeAt(i)
+                }
+            }
+        }
+
     }
 
-}
-class Persona(val nombre: String, val apellido: String, val cedula: String, val telefono: String, val direccion:String){
-    override fun toString(): String{
-        return "nombre:  ${this.nombre} apellido: ${this.apellido} cedula: ${this.cedula} telefono: ${this.telefono} direccion: ${direccion}"
-    }
 }

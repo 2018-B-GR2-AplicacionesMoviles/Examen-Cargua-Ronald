@@ -4,88 +4,97 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Pantalla3Activity">
+    tools:context=".Pantalla3Activity"
+    tools:layout_editor_absoluteY="81dp">
 
     <EditText
-        android:id="@+id/editText6"
+        android:id="@+id/nombreP3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="42dp"
+        android:layout_marginTop="28dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Nombre"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="85dp" />
 
     <EditText
-        android:id="@+id/editText7"
+        android:id="@+id/telefonoP3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintEnd_toEndOf="@+id/editText8"
-        app:layout_constraintStart_toStartOf="@+id/editText8"
-        app:layout_constraintTop_toBottomOf="@+id/editText8" />
+        android:text="Número Teléfono"
+        app:layout_constraintEnd_toEndOf="@+id/cedulaP3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/cedulaP3"
+        app:layout_constraintTop_toBottomOf="@+id/cedulaP3" />
 
     <EditText
-        android:id="@+id/editText10"
+        android:id="@+id/direccionP3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="12dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintEnd_toEndOf="@+id/editText7"
-        app:layout_constraintStart_toStartOf="@+id/editText7"
-        app:layout_constraintTop_toBottomOf="@+id/editText7" />
+        android:text="Dirrección"
+        app:layout_constraintEnd_toEndOf="@+id/telefonoP3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/telefonoP3"
+        app:layout_constraintTop_toBottomOf="@+id/telefonoP3" />
 
     <EditText
-        android:id="@+id/editText8"
+        android:id="@+id/cedulaP3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintEnd_toEndOf="@+id/editText9"
-        app:layout_constraintStart_toStartOf="@+id/editText9"
-        app:layout_constraintTop_toBottomOf="@+id/editText9" />
+        android:text="Cédula"
+        app:layout_constraintEnd_toEndOf="@+id/apellidoP3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/apellidoP3"
+        app:layout_constraintTop_toBottomOf="@+id/apellidoP3" />
 
     <EditText
-        android:id="@+id/editText9"
+        android:id="@+id/apellidoP3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintEnd_toEndOf="@+id/editText6"
-        app:layout_constraintStart_toStartOf="@+id/editText6"
-        app:layout_constraintTop_toBottomOf="@+id/editText6" />
+        android:text="Apellido"
+        app:layout_constraintEnd_toEndOf="@+id/nombreP3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/nombreP3"
+        app:layout_constraintTop_toBottomOf="@+id/nombreP3" />
 
     <Button
         android:id="@+id/button3_Cancelar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="8dp"
         android:text="Cancelar"
-        app:layout_constraintStart_toStartOf="@+id/editText10"
-        app:layout_constraintTop_toBottomOf="@+id/editText10" />
+        app:layout_constraintEnd_toStartOf="@+id/direccionP3"
+        app:layout_constraintHorizontal_bias="0.274"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/direccionP3" />
 
     <Button
         android:id="@+id/button_Actualizar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="44dp"
         android:text="Actualizar"
-        app:layout_constraintEnd_toEndOf="@+id/editText10"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/button3_Cancelar"
-        app:layout_constraintTop_toBottomOf="@+id/editText10" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toEndOf="@+id/direccionP3"
+        app:layout_constraintTop_toBottomOf="@+id/direccionP3" />
 
     <Button
         android:id="@+id/button_Borrar"
@@ -93,8 +102,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
+        android:layout_marginBottom="32dp"
         android:text="Borrar"
-        app:layout_constraintEnd_toEndOf="@+id/button_Actualizar"
-        app:layout_constraintStart_toStartOf="@+id/button3_Cancelar"
-        tools:layout_editor_absoluteY="431dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_Actualizar"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toEndOf="@+id/button3_Cancelar" />
 </android.support.constraint.ConstraintLayout>

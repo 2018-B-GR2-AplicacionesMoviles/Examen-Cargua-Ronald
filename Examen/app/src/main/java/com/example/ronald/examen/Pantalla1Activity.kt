@@ -1,5 +1,6 @@
 package com.example.ronald.examen
 
+import android.app.Activity
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
@@ -7,11 +8,7 @@ import kotlinx.android.synthetic.main.activity_pantalla1.*
 
 class Pantalla1Activity : AppCompatActivity() {
 
-    var nombre = ""
-    var apellido =""
-    var cedula =""
-    var telefono=""
-    var direccion =""
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pantalla1)
@@ -28,11 +25,19 @@ class Pantalla1Activity : AppCompatActivity() {
         this.startActivity(intentRespueta)
     }
     fun capturarDatosDelIntent() {
-        this.nombre = intent.getStringExtra("nombre")
-        this.apellido = intent.getStringExtra("apellido")
-        this.cedula = intent.getStringExtra("cedula")
-        this.telefono = intent.getStringExtra("telefono")
-        this.direccion = intent.getStringExtra("direccion")
-        BaseDeDatos.agregarPersonas(Persona(this.nombre,this.apellido,this.cedula,this.telefono,this.direccion))
+        val nombre = nombre.text.toString()
+        val apellido =apellido.text.toString()
+        val cedula =cedula.text.toString()
+        val telefono=telefono.text.toString()
+        val direccion =direccion.text.toString()
+        val intentRespuesta = Intent()
+        intentRespuesta.putExtra("nombre",nombre)
+        intentRespuesta.putExtra("apellido",apellido)
+        intentRespuesta.putExtra("cedula",cedula)
+        intentRespuesta.putExtra("telefono",telefono)
+        intentRespuesta.putExtra("direccion",direccion)
+        this.setResult(Activity.RESULT_OK,intentRespuesta)
+        this.finish()
+
     }
 }
