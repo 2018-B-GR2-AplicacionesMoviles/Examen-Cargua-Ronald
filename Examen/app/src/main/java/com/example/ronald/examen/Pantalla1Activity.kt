@@ -27,9 +27,9 @@ class Pantalla1Activity : AppCompatActivity() {
     fun capturarDatosDelIntent() {
         val nombre = nombre.text.toString()
         val apellido =apellido.text.toString()
-        val cedula = direccion.text.toString()
+        val cedula = cedula.text.toString()
         val telefono= telefono.text.toString()
-        val direccion = cedula.text.toString()
+        val direccion = direccion.text.toString()
         val intentRespuesta = Intent()
         intentRespuesta.putExtra("nombre",nombre)
         intentRespuesta.putExtra("apellido",apellido)
