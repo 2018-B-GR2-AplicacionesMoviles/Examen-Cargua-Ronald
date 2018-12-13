@@ -29,7 +29,7 @@ class Pantalla3Activity : AppCompatActivity() {
         apellidoP3.setText("${ape}")
         cedulaP3.setText("${ced}")
         telefonoP3.setText("${tel}")
-        direccion.setText("${dir}")
+       // direccion.setText("${dir}")
 
         button3_Cancelar.setOnClickListener {
             this.irAPantalla2()
