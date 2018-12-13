@@ -15,14 +15,22 @@ class Pantalla3Activity : AppCompatActivity() {
         setContentView(R.layout.activity_pantalla3)
        val personaRecivida = intent.getParcelableExtra<Persona?>("Persona")
         var nom = personaRecivida!!.nombre.toString()
+        var ape = personaRecivida!!.apellido.toString()
+        var ced = personaRecivida!!.cedula.toString()
+        var tel = personaRecivida!!.telefono.toString()
+        var dir = personaRecivida!!.direccion.toString()
         Log.i("Datos", nom)
+        Log.i("Datos", ape)
+        Log.i("Datos", "cedula"+ced)
+        Log.i("Datos", "tel"+tel)
+        Log.i("Datos", "dir"+dir)
 
-        nombreP3.setText("Ronald")
-        /*nombreP3.setText(personaRecivida!!.nombre.toString())
-        apellidoP3.setText(personaRecivida!!.apellido.toString())
-        cedulaP3.setText(personaRecivida!!.cedula.toString())
-        telefonoP3.setText(personaRecivida!!.telefono.toString())
-        direccion.setText(personaRecivida!!.direccion.toString())*/
+        nombreP3.setText("${nom}")
+        apellidoP3.setText("${ape}")
+        cedulaP3.setText("${ced}")
+        telefonoP3.setText("${tel}")
+        direccion.setText("${dir}")
+
         button3_Cancelar.setOnClickListener {
             this.irAPantalla2()
         }

@@ -24,7 +24,7 @@ class Persona(var nombre: String,
     }
 
     override fun toString(): String {
-        return "${nombre}"+"\n${apellido}"+"\n${cedula}"+"\n${telefono}"+"\n${direccion}"
+        return "Nombre: ${nombre}"+"\nApellido: ${apellido}"+"\nCedula: ${cedula}"+"\nTelefono:${telefono}"+"\nDireccion:${direccion}"
     }
     override fun describeContents(): Int {
         return 0

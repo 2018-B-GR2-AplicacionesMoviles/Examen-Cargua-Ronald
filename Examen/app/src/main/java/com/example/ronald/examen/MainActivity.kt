@@ -54,6 +54,7 @@ class MainActivity : AppCompatActivity() {
     }
     fun CrearPersona(nombre: String, apellido: String, cedula: String, telefono:String,dirreccion:String): Unit {
         val _perosona: Persona = Persona(nombre,apellido,cedula,telefono,dirreccion)
+        Log.i("Persona",_perosona.toString())
         BaseDeDatos.Persona.add(_perosona)
     }
     companion object {

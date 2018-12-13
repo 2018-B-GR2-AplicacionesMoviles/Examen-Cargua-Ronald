@@ -42,12 +42,12 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Número Teléfono"
-        app:layout_constraintEnd_toEndOf="@+id/direccion"
-        app:layout_constraintStart_toStartOf="@+id/direccion"
-        app:layout_constraintTop_toBottomOf="@+id/direccion" />
+        app:layout_constraintEnd_toEndOf="@+id/cedula"
+        app:layout_constraintStart_toStartOf="@+id/cedula"
+        app:layout_constraintTop_toBottomOf="@+id/cedula" />
 
     <EditText
-        android:id="@+id/cedula"
+        android:id="@+id/direccion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
@@ -60,7 +60,7 @@
         app:layout_constraintTop_toBottomOf="@+id/telefono" />
 
     <EditText
-        android:id="@+id/direccion"
+        android:id="@+id/cedula"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -81,8 +81,8 @@
         android:text="Cancelar"
         app:layout_constraintEnd_toStartOf="@+id/button_Guardar"
         app:layout_constraintHorizontal_bias="0.25"
-        app:layout_constraintStart_toStartOf="@+id/cedula"
-        app:layout_constraintTop_toBottomOf="@+id/cedula" />
+        app:layout_constraintStart_toStartOf="@+id/direccion"
+        app:layout_constraintTop_toBottomOf="@+id/direccion" />
 
     <Button
         android:id="@+id/button_Guardar"
@@ -90,6 +90,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="56dp"
         android:text="Guardar"
-        app:layout_constraintEnd_toEndOf="@+id/cedula"
-        app:layout_constraintTop_toBottomOf="@+id/cedula" />
+        app:layout_constraintEnd_toEndOf="@+id/direccion"
+        app:layout_constraintTop_toBottomOf="@+id/direccion" />
 </android.support.constraint.ConstraintLayout>
